@@ -24,8 +24,10 @@ Or install it yourself as:
 
 To use with Sprockets:
 
-    # import reef in app/assets/application.scss
-    @import "reef";
+```scss
+# import reef in app/assets/application.scss
+@import "reef";
+```
 
 ## Development
 
