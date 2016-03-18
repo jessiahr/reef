@@ -9,7 +9,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'reef'
+gem 'reef', git: 'https://github.com/jessiahr/reef.git'
 ```
 
 And then execute:
@@ -25,7 +25,7 @@ Or install it yourself as:
 To use with Sprockets:
 
 ```scss
-# import reef in app/assets/application.scss
+/*import reef in app/assets/application.scss*/
 @import "reef";
 ```
 
