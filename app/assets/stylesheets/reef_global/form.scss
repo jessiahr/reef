@@ -1,0 +1,115 @@
+label { 
+	line-height: 1.5rem;
+	pointer-events: none;
+}
+
+input {
+	display: block;
+	width: 100%;
+
+	// Reset.
+	background: none;
+	border: none;
+	outline: none;
+
+	&[type='number'] { 
+		max-width: 5rem; 
+		text-align: center;
+	}
+}
+
+.field {
+	position: relative;
+	textarea {
+		border: none;
+		width: 100%;
+		height: 10rem;
+	}
+	input, textarea {
+		@extend .cbgg-7;
+		@extend .px2;
+		@extend .py1;
+		@extend .t0;
+
+		font-weight: $fw-book;
+		line-height: 1.7rem; // Make text line up in center of div.
+		border-radius: $default-border-radius;
+		transition: background 0.17s ease-in,
+		box-shadow 0.17s ease-in,
+		transform 0.17s ease-in;
+
+		&:focus {
+			@extend .cbgg-white;
+
+			box-shadow: 0 1px 14px -2px rgba(0,0,0,0.2);
+			// transform: translateY(-4px);
+		}
+	}
+
+	&.label-y-middle {
+		label { 
+			@extend .cg-4;
+			@extend .t-1;
+			@extend .middle-y;
+			@extend .ml2;
+		}
+
+		input {
+			@extend .pl12;
+		}
+	}
+
+
+}
+
+
+.input-placeholder { line-height: 1.35; }
+
+::-webkit-input-placeholder { @extend .input-placeholder; }
+::-moz-placeholder { @extend .input-placeholder; }
+:-ms-input-placeholder { @extend .input-placeholder; }
+:-moz-placeholder { @extend .input-placeholder; }
+
+.filter,
+[class^='filter-'],
+[class*=' filter-'] {
+	position: relative;
+
+	input {
+		border-bottom: 1px solid $grey-5;
+	}
+
+	&[class*='large'] {
+
+		input {
+			font-weight: $fw-book;
+			padding: 0.5rem 0.5rem;
+		}
+
+		& + p {
+			padding: 0 0.5rem;
+			color: $grey-5;
+		}
+	}
+
+	& > [class*='icon'] {
+		position: absolute;
+		right: 0.5rem;
+		bottom: 1rem;
+	}
+}
+
+label {
+	display: block;
+	// margin-bottom: 0.71rem;
+	// font-weight: $fw-semibold;
+	// text-transform: uppercase;
+	// letter-spacing: 0.1em;
+}
+
+.error {
+	margin-top: 0.75rem;
+	color: $jasper;
+	line-height: 1.35;
+	border: .5px solid $jasper;
+}

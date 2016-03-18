@@ -1,0 +1,29 @@
+.image,
+[class^='image-'],
+[class*=' image-'] {
+	width: 100%;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	background: #f1f1f1;
+
+	&[class*='thumb'] {
+		width: 4.25rem;
+		height: 4.25rem;
+	}
+
+	&.fit-y, // Phase this out.
+	&[class*='fit-y'] {
+		img {
+			width: auto;
+			height: 100%;
+		}
+	}
+
+	img {
+		width: 100%;
+		min-width: 100%;
+		height: auto;
+	}
+
+}

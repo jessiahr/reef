@@ -1,0 +1,71 @@
+// This file is for project specific type styles.
+// Generic type styles, such as weight, sizing, bold, italic,
+// underline, strikethrough, etc. are in util/type.scss.
+
+$default-type-color: #000 !default;
+$default-line-height: 1.5 !default;
+
+*,
+body,
+html {
+  font-family: 'Gotham';
+  color: $default-type-color;
+}
+
+div, ul, li, h1, h2, h4, h5, a, p, input, button, label { 
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+	line-height: $default-line-height;
+}
+
+a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+pre {
+	@extend .t-1;
+	@extend .cg-2;
+	@extend .cbgg-7;
+
+  overflow-x: auto;
+  max-width: 100%;
+
+  line-height: 1.5;
+  font-family: "Courier New", monospace;
+	// display: inline-block;
+	padding: 0.55rem 0.75rem 0.45rem;
+  border-radius: $default-border-radius;
+
+  &::-webkit-scrollbar { 
+    display: none; 
+  }
+}
+
+.script {
+  font-family: 'Blog Script';
+}
+
+.brand {
+  height: 2rem;
+  width: 10.35rem;
+}
+.t-center{
+  text-align: center;
+}
+.t-right{
+  text-align: right;
+}
+.t-left{
+  text-align: left;
+}
+.caps {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.upper {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

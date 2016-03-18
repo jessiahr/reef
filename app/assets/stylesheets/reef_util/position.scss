@@ -1,0 +1,62 @@
+.block { display: block !important; }
+.inline-block { display: inline-block !important;}
+.valign-mid { vertical-align: middle; }
+
+
+.relative { position: relative; }
+
+// Absolute positioning.
+.top {
+  position: absolute;
+  top: 0;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.middle-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.middle-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// Fixed positioning.
+
+.fixed,
+[class^='fixed-'],
+[class*=' fixed-'] {
+  position: fixed;
+
+  &[class*='top'] { top: 0; }
+  &[class*='bottom'] { bottom: 0; }
+  &[class*='left'] { left: 0; }
+  &[class*='right'] { right: 0; }
+}
+
+// Translate.
+.y50 { transform: translateY(50%); } // Push down by half.
+.y-50 { transform: translateY(-50%); } // Pull up by half.
+
+.x10 { transform: translateX(10%); }
+.x-10 { transform: translateX(-10%); }
+
+.x50 { transform: translateX(50%); }
+.x-50 { transform: translateX(-50%); }

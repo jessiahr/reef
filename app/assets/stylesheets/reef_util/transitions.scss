@@ -1,0 +1,25 @@
+$default-transition-duration: 0.27s !default;
+$default-transition-easing: ease-in !default;
+
+/* always present */
+.expand-transition {
+  transition: max-height .3s ease-in;
+  height: auto;
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+/* .expand-enter defines the starting state for entering */
+/* .expand-leave defines the ending state for leaving */
+.expand-enter, .expand-leave {
+  max-height: 0;
+}
+
+.fadeIn-transition {
+	transition: opacity $default-transition-duration $default-transition-easing;
+	opacity: 1;
+}
+
+.fadeIn-enter, .fadeIn-leave {
+	opacity: 0;
+}

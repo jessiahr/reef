@@ -1,0 +1,19 @@
+.tag,
+[class^='tag-'],
+[class*=' tag-'] {
+	@extend .cbgg-8;
+	@extend .py2;
+	@extend .px4;
+
+	display: inline-block;
+	vertical-align: bottom;
+	line-height: 0.5rem;
+
+	border-radius: 2.4rem;
+
+	&[class*='sm'] {
+		@extend .py1;
+		@extend .px2;
+		@extend .t-1;
+	}
+}

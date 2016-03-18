@@ -1,0 +1,44 @@
+.tile,
+[class^='tile-'],
+[class*=' tile-'] {
+	width: 100%;
+	position: relative;
+	background: $white;
+	border-radius: $default-border-radius;
+	box-shadow: 0 0.1rem 0.2rem rgba(0,0,0,0.08);
+
+	&[class*='profile'] {
+
+		& > .image {
+			height: 6.5714285714rem;
+			width: 6.5714285714rem;
+			border-radius: 50%;
+		}
+	}
+
+	&[class*='product'] {
+		// min-width: 17.142857143rem;
+		position: relative;
+
+		& > .image { 
+			width: 100%;
+			height: 14rem;
+
+			// Make the image undrabbable.
+			pointer-events: none;
+		}
+
+		& > .info { position: relative; }
+
+	}
+
+	&[class*='product-condensed'] {
+		height: 5rem;
+
+		& > .image {
+			width: 6rem;
+			height: 100%;
+		}
+		
+	}
+}

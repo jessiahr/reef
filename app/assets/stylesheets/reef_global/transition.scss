@@ -1,0 +1,21 @@
+.zoomFade-transition {
+	transition: all 0.2s ease-in;
+	transform: scale(1);
+	opacity: 1;
+}
+
+.zoomFade-enter,
+.zoomFade-leave {
+	transform: scale(0);
+	opacity: 0;
+}
+
+.fade-transition {
+	transition: all 0.2s ease-in;
+	opacity: 1;
+}
+
+.fade-enter,
+.fade-leave {
+	opacity: 0
+}
