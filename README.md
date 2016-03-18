@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use with Sprockets:
+
+    # import reef in app/assets/application.scss
+    @import "reef";
 
 ## Development
 
