@@ -18,14 +18,37 @@ Or install it yourself as:
 
     $ gem install reef
 
-## Usage
+## Install
 
 To use with Sprockets:
 
+Import the css 
 ```scss
-/*import reef in app/assets/application.scss*/
-@import "reef";
+/*import reef in app/assets/stylesheets/application.scss*/
+ *= require reef
+ ```
+
+Import the js 
+```js
+/*import reef in app/assets/javascripts/application.js*/
+//= require reef/vue
+//= require reef/vue-resource
+//= require reef
 ```
+
+## Usage
+
+In a view you can now use the `vue-with` helper to setup vue with data from your controller
+```erb
+<%= vue_with :data => {listData: ['cat', 'dog', 'fish']}, :debug => true %>
+```
+
+Render a component:
+```html
+<simple-list :list="listData"></simple-list>
+```
+
+
 <!-- 
 ## Development
 

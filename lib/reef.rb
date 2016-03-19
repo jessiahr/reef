@@ -1,4 +1,5 @@
 require "reef/version"
+require "view_helpers/reef_helper"
 
 module Reef
   module Rails
@@ -6,3 +7,5 @@ module Reef
     end
   end
 end
+
+ActionView::Base.send :include, ReefHelper
