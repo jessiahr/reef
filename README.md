@@ -22,15 +22,13 @@ Or install it yourself as:
 
 To use with Sprockets:
 
-Import the css 
+Include Reef CSS in `app/assets/stylesheets/application.scss`
 ```scss
-/*import reef in app/assets/stylesheets/application.scss*/
  *= require reef
  ```
 
-Import the js 
+Include Reef JS in `app/assets/javascripts/application.js`
 ```js
-/*import reef in app/assets/javascripts/application.js*/
 //= require reef/vue
 //= require reef/vue-resource
 //= require reef
