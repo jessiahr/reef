@@ -37,4 +37,8 @@ class @Reef
   @loadComponentList()
   
 
-Reef.start(['simple-list'])
+Reef.start([
+  'simple-list',
+  'drop-zone',
+  'kaching'
+  ])
